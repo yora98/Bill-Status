@@ -5,44 +5,92 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.yog.hp.fireapp.MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="10dp">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="38dp"
-        />
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="this is awesome"
-        android:id="@+id/text1"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Agency Name"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Bill"
-        android:id="@+id/add"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="View Bill"
-        android:id="@+id/view"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Delete Bill"
-        android:id="@+id/del"/>
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="10dp"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="5"
+        android:soundEffectsEnabled="true"
+        android:text="Unneti Medical"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="70dp"
+        android:textStyle="italic|bold"
+        android:visibility="visible" />
+    <!--
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="38dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="this is awesome"
+            android:id="@+id/text1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agency Name"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        -->
+        <Button
+            android:text="Add Bill"
+            android:textColor="#D4FFF8"
+            android:textSize="40sp"
 
-</LinearLayout>
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A84E19"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="5"
+            android:id="@+id/add"
+            android:layout_marginBottom="20dp"/>
+        <Button
+            android:textColor="#D4FFF8"
+            android:textSize="40sp"
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A84E19"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="5"
+            android:text="View Bill"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/view"/>
+     <!--   <Button
+            android:textColor="#D4FFF8"
+            android:textSize="40sp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A84E19"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="5"
+            android:text="Delete Bill"
+            android:id="@+id/del"/>
+        -->
+    </LinearLayout>

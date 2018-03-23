@@ -1,32 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/border_ui"
+    >
+
     <TextView
+        android:id="@+id/text1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="agenccy name:"
-        android:id="@+id/text1"/>
+        android:text="Agency Name:"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
     <TextView
+        android:id="@+id/text2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="bill no:"
-        android:id="@+id/text2"/>
+        android:text="Bill no:" />
+
     <TextView
+        android:id="@+id/status_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="status:"/>
+        android:text="Status:" />
+
     <TextView
+        android:id="@+id/amt_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="amount:" />
+        android:text="Amount:" />
+
     <TextView
+        android:id="@+id/pay_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Paid By:"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="pay"
-        />
+        android:text="Paid By:" />
 </LinearLayout>

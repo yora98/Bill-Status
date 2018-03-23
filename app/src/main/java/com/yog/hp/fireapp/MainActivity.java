@@ -7,13 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-
-//import com.firebase.client.Firebase;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Button bt;
@@ -26,6 +20,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //below line is very important line add it when using firebase.
+        FirebaseDatabase.getInstance().getReference().keepSynced(true);
        /* FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("message");
         myRef.setValue("Hello, World!");
@@ -56,32 +52,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        bt.setOnClickListener(this);
         addbt.setOnClickListener(this);
         viewbt.setOnClickListener(this);
-        delbt.setOnClickListener(this);
+       // delbt.setOnClickListener(this);
     }
 
     public void initiate(){
         addbt=(Button) findViewById(R.id.add);
         viewbt=(Button) findViewById(R.id.view);
-        delbt=(Button) findViewById(R.id.del);
+       // delbt=(Button) findViewById(R.id.del);
     }
     @Override
     public void onClick(View v) {
+        Intent intent;
             switch (v.getId()) {
-                case R.id.button :
+                /*case R.id.button :
 
-                    break;
+                    break;*/
 
                 case R.id.add:
-                    Intent intent= new Intent(this,AddBill.class);
+                    intent= new Intent(this,AddBill.class);
                     startActivity(intent);
                     break;
 
-                case R.id.del:
+         /*       case R.id.del:
 
                     break;
-
+            */
                 case R.id.view:
-
+                    intent= new Intent(this,ViewBill.class);
+                    startActivity(intent);
                     break;
                 }
 
